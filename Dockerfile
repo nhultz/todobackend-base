@@ -8,7 +8,7 @@ ENV TERM=xterm-256color
 RUN apt-get update && \
     apt-get install -y \
     -o APT::Install-Recommend=false -o APT:Install-Suggests=false \
-    python python-virtualenv
+    python python-virtualenv libpython2.7 python-mysqldb
 
 # Create virtual environment
 # Update PIP in virtual environment to latest version
